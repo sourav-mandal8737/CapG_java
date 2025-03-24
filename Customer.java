@@ -1,18 +1,27 @@
-package Many_to_one;
+package One_to_many;
 
 public class Customer {
-	int id;
-	String customerName;
-	Bank bank;
-	
-	public Customer(int id,String customerName,Bank bank) {
-		this.id=id;
-		this.customerName=customerName;
-		this.bank=bank;
-	}
-	
-	public void display() {
-		System.out.println(this.id+" "+this.customerName+" "+this.bank.bankName);
-	}
+    String customerName;
+    int customerId;
 
+    public Customer(String customerName, int customerId) {
+        this.customerName = customerName;
+        this.customerId = customerId;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String toString() {
+        return "Customer ID: " + customerId + ", Customer Name: " + customerName;
+    }
 }
