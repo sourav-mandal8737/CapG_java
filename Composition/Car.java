@@ -14,5 +14,3 @@ public class Car {
 }
 
 
-
-perform agggregation in same way fro bank and customer u have to pass name of the bank and name of the customer
